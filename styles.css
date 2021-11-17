@@ -3,23 +3,180 @@
   
 }
 
-a{
+header{
+    background-color: #fff;
+}
+body{
+    font-family:'poppins' sans-serif;
+}
+
+.conteiner{
+    width: 90%;
+    max-width: 1200px;
+    align-items: center;
+    margin: 15px;
+    overflow: hidden;
+  
+}
+
+
+.box-icon{
+    position: absolute;
+    top: 30px;
+    bottom: 0px;
+    left: 74rem;
+    right: 0;
+    
+    
+}
+.box-icon .cart-conteiner{
+    color: black;
+    font-size: 20px;
+}
+.box-zero a{
+    text-decoration:none;
+    color: #fff;
+}
+.box-zero{
+    font-size: 16px;
+    color: #fff;
+    z-index: 4;
+   position: relative;
+    bottom: -8px;
+    left: -17px;
+}
+   
+
+
+
+
+
+
+/*MENU*/
+
+.menu-navegation{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo{
+    
+   margin-left: 60px;
+    height: 70px;
+}
+.logo img{
+    
+    height: 100%;
+}
+
+
+.menu-primary li{
+    list-style-type:none;
+    font-family: 'poppins',sans-serif;
+    display: inline-block;
+    padding: 0px 15px;
+
+}
+.menu-primary a{
+    text-decoration: none;
+    font-size:  17px ;
+    color: black;
+    padding: 0 5px;
+}
+/*MENU DESPLEGABLE*/
+
+
+
+
+/*PRESENT MENU*/
+
+.present-menu{
+    height:  500px;
+    background-image: url(https://i2.wp.com/hipertextual.com/wp-content/uploads/2021/03/xiaomi-mi-laptop-pro-5-1-scaled.jpg?fit=2560%2C1348&ssl=1);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    }
+    .conteiner-text{
+        padding: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+    }
+
+.present-menu h1{
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.present-menu h1 strong{
+    font-weight: 700;
+}
+
+
+
+.button1{
+    color:#fff;
+    text-decoration: none;
+    margin-right: 40px;
+    padding: 10px 30px;
+    background-color: #E07715;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #E07715;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.button2{
+    color: black;
+    text-decoration: none;
+    margin-left: 40px;
+    padding: 10px 30px;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #fff;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.text-button{
+    letter-spacing: 2px;
+    font-size:20px ;
+    font-weight: 300;
+}
+
+/*header{
+    position: relative;
+    left: 0;
+    right: 0;
+    text-align: center;  
+
+
+
+
+/*a{
     text-decoration: none;
     color:  #030303;
     background: transparent;
     
-}
+}*/
 
-ul{
+/*ul{
     list-style: none;
-}
-.container{
+}*/
+/*.container{
     
     align-items: center;
     width: 80%;
     margin: 0 auto;
-}
-/*Navegation*/
+}*/
+/*Navegation
 .nav-main {      
    font-size: 16px;
    font-size: 1rem;
@@ -30,65 +187,65 @@ ul{
    height: 100px;
    padding: 0px 1px;
 
-}
+}*/
 
 
-.nav-main ul{
+/*.nav-main ul{
     display: flex;
     margin: 0;
     list-style: none;
     
-}
+}*/
 
-.nav-main ul li{
+/*.nav-main ul li{
     display: flex;
     column-gap: 8px;
-}
-.nav-main ul li a{
+}*/
+/*.nav-main ul li a{
     flex-wrap: wrap;
     display: block;
     padding: 0.5rem 1rem;
-}
+}*/
 
-.nav-main ul.nav-menu{
+/*.nav-main ul.nav-menu{
     flex: 1;
     margin-left: 50px;
-}
-div{
+}*/
+/*div{
     display: block;
-}
+}*/
 
-.shopping-menu-car{
+/*.shopping-menu-car{
 display: flex;   
 padding: 0px;
 flex-wrap: wrap;
-}
+}*/
 
-.shopping-car{
+/*.shopping-car{
     position: absolute;
     right: 0 2em;
     top: 2.2em;
     
 
 
-  }
+}
   
-  .car-menu{
+/*.car-menu{
    position: relative;
    right: -9.5px;
       
      color: #fff;
-  }
+  }*/
 
 /*Imagen fija*/
 
-.imagen_fondo{
+/*.imagen_fondo{
     background-image: url(https://fotocreativo.com/wp-content/uploads/2020/02/laptops-para-edicion-de-video.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     height: 20em;
-}
+}*/
 
 .titulo_banner{
     color: #fff;
