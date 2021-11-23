@@ -1,6 +1,333 @@
 *{
-    box-sizing:inherit;
+    box-sizing: inherit;
+}
+header{
+    align-items: center;
+    position: relative;
+    left: 0px;
+    right: 0px;
+}
+body{
+    font-family: "poppins", sans-serif;
+   
+}
+/*Menu de navegacion*/
+.container{
+    background-color: #fff;
+    width: 100%;
+    max-width: 1200;
+    align-items: center;
+    padding: 0 1em;
+    overflow: hidden;  
+}
+.container div{
+    
+    display: inline-flex;
+    vertical-align: middle;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 60px;
+}
+.logo .custom-logo{
+    position: relative;
+    left: 50px;
+}
+.menu-primary{
+
+    align-content: center;
+}
+
+
+.menu-primary li{
+    display: inline-block;
+    padding: 0 16px;
+    margin: 0px;
+    
+   
+}
+
+.menu-primary a{
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: black;
+   
+}
+
+.box-icon div{
+    padding:14px;
+    display: inline-flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-items: center;
+}
+.box-icon .cart-container{
+    color: black;
+    position: absolute;
+    right: 140px;
+    
+}
+.box-zero{
+    padding: 0px;
+    position: relative;
+    right:123px ;
+    top: 5px;
+}
+
+.box-zero a  .count{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+   
+}
+/*MENU DESPLEGABLE*/
+
+
+/*presntacion y botones de innovamos soluciones*/
+
+.present-menu{
+    height:  500px;
+    background-image: url(https://i2.wp.com/hipertextual.com/wp-content/uploads/2021/03/xiaomi-mi-laptop-pro-5-1-scaled.jpg?fit=2560%2C1348&ssl=1);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    }
+.text-innov{
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.text-innov h1 strong{
+    font-weight: 700;
+}
+.text-innov h1{
+    font-size: 60px;
+    font-weight: 300;
+}
+.button1{
+    color:#fff;
+    text-decoration: none;
+    margin-right: 40px;
+    padding: 10px 30px;
+    background-color: #E07715;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #E07715;
+    border-radius: 50px 50px 50px 50px;
+}
+.button2{
+    color: black;
+    text-decoration: none;
+    margin-left: 40px;
+    padding: 10px 30px;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #fff;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.text-button{
+    letter-spacing: 1px;
+    font-size:14px ;
+    font-weight: 700;
+}
+
+/*tercera seccion Empresa*/
+.section-empresa{
+
+    padding: 6% 0% 6% 0%;
+    background-color: #fff;
+    display: block;
+}
+.box-tittle1{
   
+    position: relative;
+    left: 5em;
+}
+.box-tittle1 h3{
+    font-size: 37.5px;
+    display: block;
+}
+.box-text{
+    position: relative;
+    left: 6em;
+    margin: 0px 0px 16.5;
+}
+
+.box-text p{
+    color: #000000;
+    font-family: "Poppins", Sans-serif;
+    line-height: 1.6em;
+}
+.bottom-empresa{
+    position: relative;
+    top: 30px;
+    left: 6em;
+}
+.bottom-empresa .read{
+    color:#fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #E07715;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #E07715;
+    border-radius: 50px 50px 50px 50px;
+}
+.box-img-empresa{
+    position: relative;
+    padding: 30px;
+    left: 50em;
+    bottom: 10em;
+}
+.box-img-empresa img{
+width: 15%;
+height: 15%;
+    
+}
+/*NUESTRAS SOLUCIONES + CARRUSEL*/
+.section-solutions{
+    
+    background-color: #E07715;
+    padding: 6% 0% 6% 0%;
+    display: block;
+}
+.contenedor{
+   width: 90%;
+   margin: auto; 
+}
+.text-tittle-solutions{
+    padding: 0;
+    margin-bottom: 70px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.text-tittle-solutions h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+/*contenedor de titulo controles*/
+.titulo-controles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.titulo-controles .indicadores button{
+   background: #fff;
+   height: 3px;
+   width: 10px;
+   cursor: pointer;
+   border: none;
+   margin-right: 2px; 
+}
+
+/*contenedor principal y flechas*/
+
+.text-tittle-solutions .contenedor-principal{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.text-tittle-solutions .contenedor-principal .arrow-left,
+.text-tittle-solutions .contenedor-principal .arrow-right{
+    position: absolute;
+    border: none;
+    background: transparent;
+    font-size: 40px;
+    height: 50%;
+    top: calc(50% - 25%);
+    line-height: 40px;
+    width: -50%;
+    color: #fff;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
+}
+.text-tittle-solutions .contenedor-principal .arrow-left{
+    left: 0;
+}
+.text-tittle-solutions .contenedor-principal .arrow-right{
+    right: 0;
+}
+
+/*carousel*/
+.text-tittle-solutions .contenedor-carousel{
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    
+  
+}
+.text-tittle-solutions .contenedor-carousel .carousel{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.text-tittle-solutions .contenedor-carousel .carousel .img-solutions{
+    min-width: 35%;
+    transition: .3s ease all;
+   
+   
+}
+.text-tittle-solutions .contenedor-carousel .carousel .img-solutions.hover{
+transform: scale(1.2);
+transform-origin: center;
+}
+.text-tittle-solutions .contenedor-carousel .carousel .img-solutions img{
+    width: 100%;
+    vertical-align: top;
+    
+}
+
+.bottom-solutions{
+    position: relative;
+    left: 36.5em;
+}
+.bottom-solutions .read2{
+    color:#E07715;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #fff;
+    border-radius: 50px 50px 50px 50px;
+}
+
+@media screen and (max-width:800px){
+    .text-tittle-solutions .contenedor-carousel{
+        overflow: visible;
+    }
+    .peliculas-recomendadas .contenedor-carousel .carousel{
+        display: grid;
+        grid-template-columns: repeat(3,lfr);
+        gap: 20px;
+    }
+    .text-tittle-solutions .indicadores,
+    .text-tittle-solutions .arrow-left,
+    .text-tittle-solutions .arrow-right{
+        display: none;
+    }
+}
+
+
+
+/*todo lo que llevo desde aca*/
+/*{
+    box-sizing:inherit;
+   
 }
 
 header{
@@ -55,12 +382,7 @@ body{
 
    
 
-
-
-
-
-
-/*MENU*/
+/*MENU
 
 .menu-navegation{
     padding: 0;
@@ -108,7 +430,7 @@ body{
 
 
 
-/*PRESENT MENU*/
+/*PRESENT MENU
 
 .present-menu{
     height:  500px;
@@ -168,7 +490,7 @@ body{
     font-weight: 300;
 }
 
-/* seccion empresa*/
+/* seccion empresa
 .section-empresa{
     box-sizing: content-box;
     position: absolute;
