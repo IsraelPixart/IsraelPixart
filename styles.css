@@ -3,33 +3,49 @@
     padding: 0;
     margin: 0;
     border: none;
-    box-sizing: border-box;
+    
  }
 
 
  body{
+     margin: 0;
      min-height: 100vh;
      width: 100vw;
      background-color: transparent;
-     overflow-x: hidden;
  }
- main{
-     margin: 0;
-     padding: 0;
-     box-sizing: content-box;
- }
+   
+
+   
+
 /*navegacion*/
+.button-mobile {
+display:none ;        
+}
+.button-mobile button{
+    color: orangered;
+    border: 1px solid orangered;
+    padding: 5px 5px 5px 5px;
+    border-radius: 50px;
+}
+
+.logo{
+    
+    padding: 15px;
+}
 .menu-primary{
+    
     background-color: #fff;
     font-family: 'poppins',sans-serif;
-    display: inline-flex;
+    display: flex;
     margin: 0px 107.5px;
-    padding: 15px 20px;
+    padding: 0px 50px;
 }
+
 
 .menu-primary .list-ul{
     position: relative;
-    left: 100px;
+    left: 70px;
+    top: 10px;
 
 
 }
@@ -51,7 +67,7 @@
 .menu-primary li a{
     text-decoration: none;
     color: #0c0c0c;
-    display: flex;
+    display: block;
     padding: 15px;
 }
 
@@ -63,54 +79,77 @@
     color: #0c0c0c;
 }
 .list-ul .count{
+    text-decoration: no;
     position: relative;
     z-index: 1;
     right: -3.5px;
     top: 18px;
     color: #fff;
 }
+@media (max-width:1220px){
+    .button-mobile{
+        display: block;
+    }
+    .menu-primary{
+        position: absolute;
+        background: #fff;
+        width: 70%;
+        margin-right: -70%;
+    }
+    .menu-primary ul{
+        flex-direction: column;
+    }
+    .menu-primary li{
+         border-top: 1px solid #0c0c0c;
+    }
+    .button:checked ~ .menu-primary{
+        margin: 0;
+    }
+}
+
+    
+
 /*innovamos soluciones background y botones*/
+
 .present-menu{
     display: flex;
     width: 100%;
-    height: 750px;
+    height: 550px;
     border: none;
     justify-content: center;
     align-items: center;
-    background-image: url(https://i2.wp.com/hipertextual.com/wp-content/uploads/2021/03/xiaomi-mi-laptop-pro-5-1-scaled.jpg?fit=2560%2C1348&ssl=1);
+    background-image: url(http://pixartlatam.com/wp-content/uploads/2021/02/notebook.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
-   
+    overflow: hidden;
+    
 }
+
 
 
 .present-menu .text-innov {
+    width: 100%;
  color: #fff;
- font-size: 3.3em;
+ font-size: 2.5em;
  font-weight: 300;
  letter-spacing:-2px;
- margin-top: 200px;
 
 }
 .present-menu .text-innov h1{
-    
-    margin-bottom: 90px;
+    margin-bottom: 50px;
     font-weight: 100;
 }
 .present-menu .text-innov h1 strong{
-    overflow: hidden;
-    padding: 10px;
     font-weight: 700;
 }
 
 .button-innov a{
+    font-size: 0.8em;
     display: inline-block;
-    align-content: center;
     text-transform: uppercase;
-    overflow: hidden;
-    margin-bottom: 90px;
+   
 }
 
 
@@ -122,9 +161,8 @@
     text-decoration: none;
     background-color: #E07715;
     border-radius: 50px;
-    left: calc(50% - 170px);
     border: none;
-     
+   
      
    
 }
@@ -139,52 +177,56 @@
     background-color: #fff;
     border-radius: 50px;
     border: none;
-    
+ 
 }
 
  .button-innov  :hover{
     transform:scale(1.10 );
     transition: all 0.5s;
+   
 }
 
 /*elemento separador estilizado flechita*/
 
-.element-figure-separed{
-display: block;
-margin-top: 90px;
-width: 1400px;
+.elementor-style svg{
+    position: relative;
+    bottom: 170px;
+    width: 100%;
+    height: 100%; 
+    fill: #fff;
+    overflow: hidden;
+}
+.elementor-style .elementor-shape{
+    
+}
 
    
-}
 
-
-.element-figure-separed .elementor-shape-fill{
-    fill: #fff;
-}
 
 /*seccion empresa + efecto de transicion*/
 
 
 .section-empresa{
-    width: 90rem;
-    height: 700px;
-    display: flex;
+    width: 100%;
+    height: 600px;
     background-color: #fff;
     font-family: 'poppins',sans-serif;
+    margin-top:5px;
     padding: 30px; 
-    margin: 0;
-    
-    
+  
 }
 .section-empresa .box{
+    font-family: "Poppins", Sans-serif;
+    color: #000000;
     margin-bottom: 30px;
+    width: 100%;
+    overflow: hidden;
 }
 .section-empresa .box h3{
     font-size: 2.3rem;
 }
 .section-empresa .box p{
-    color: #000000;
-    font-family: "Poppins", Sans-serif;
+  
     font-size: 1.1rem;
     font-weight: 300;
     line-height: 1.6em;
@@ -202,36 +244,21 @@ width: 1400px;
     top: 30px;  
  
 }
+
 .bottom-empresa:hover{
     transform:scale(1.10 );
-    transition: 0.5s;
-    
+    transition: 0.5s;   
 }
-
-
-.section-empresa .container-text{
-    box-sizing: content-box;
-    position: absolute;
+.section-empresa .tablets{
+    position: relative;
+    right: -600px;
+    bottom: 200px;
+    overflow: hidden;
+}
+.tablets img{
     width: 500px;
-    height: 400px;
-    margin-top: 80px;
-    padding: 30px;
-}
-
-.container-img-empresa{
-    box-sizing: content-box;
     
-    position:relative;
-    left:45rem;
-    width: 500px;
-    height: 600px;
-  
-}
-
-.container-img-empresa img{
-   
-    height: 500px;
-    width: 400px;
+    
 }
 /*Nuestras Soluciones y carrousel*/
 .section-solutions{
@@ -244,15 +271,7 @@ width: 1400px;
     align-items: center;
     text-align: center;
 }
-.element-figure-separed-up{
-    position: relative;
-    transform: rotate(180deg);
-    top: -100px;
-}
-.element-figure-separed-up .elementor-shape-fill{
-    fill:#fff ;
-  
-}
+
 
 
 .section-solutions .tittle-controls{
@@ -301,7 +320,7 @@ width: 1400px;
 .carrusel-nuestras-soluciones .container-principal .flecha-derecha{
    right: 0;
 }
-/*carrusel*/
+/*carrusel*
 .carrusel-nuestras-soluciones .container-carrusel{
     width:100%;
     padding: 20px 0px;
