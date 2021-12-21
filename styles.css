@@ -1,159 +1,193 @@
 *{
     box-sizing: inherit;
-    padding: 0;
-    margin: 0;
+   
     border: none;
     
+    
  }
 
-
+html{
+    overflow-x: hidden
+}
  body{
-     margin: 0;
-     min-height: 100vh;
-     width: 100vw;
-     background-color: transparent;
+    font-family: 'poppins','sans serif';
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    
  }
-   
 
-   
-
-/*navegacion*/
-.button-mobile {
-display:none ;        
-}
-.button-mobile button{
-    color: orangered;
-    border: 1px solid orangered;
-    padding: 5px 5px 5px 5px;
-    border-radius: 50px;
-}
-
-.logo{
+ main{
+    width: 100%;
+     height: auto; 
     
-    padding: 15px;
-}
-.menu-primary{
+     margin: 0;
+     padding: 0;
     
+ }
+
+ /*menu de navegacion*/
+ .container-menu{
     background-color: #fff;
     font-family: 'poppins',sans-serif;
-    display: flex;
-    margin: 0px 107.5px;
+    margin-left:  107.5px;
     padding: 0px 50px;
-}
-
-
-.menu-primary .list-ul{
-    position: relative;
-    left: 70px;
-    top: 10px;
-
-
-}
-.menu-primary ul{
-    display: flex;
-    flex-wrap: wrap;
+ }
+ .container-menu div{
+     display: flex;
+    
+ }
+ .logo{
+     padding: 15px 0px;
+ }   
+ .option-menu .menu{
+   
+    margin-top: 15px;
     list-style: none;
     font-size: 15px;
-    padding: 15px 0;
-    align-content: center;
-    
-    
-}
-
-.menu-primary li{
-    list-style: none;
-   
-}
-.menu-primary li a{
+ }
+ .menu li{
+    display: inline-block;
+    position: relative;
+ }
+ .menu li a{
     text-decoration: none;
     color: #0c0c0c;
     display: block;
+    padding: 15px 15px;
+ }
+ .menu li a:hover{
+    color: orange;
+    transition: all 0.5s;
+ }
+ .submenu{
+     z-index: 30;   
+    position: absolute;
+    background-color: #fff;
+    width: 130%;
+    display: none;
+ 
+}
+
+.submenu li a{
+    display: block;
     padding: 15px;
-}
-
-.list-ul .cart-container{
-    position: relative;
-    z-index: 0;
-    right: -20px;
-    top: 5px;
-    color: #0c0c0c;
-}
-.list-ul .count{
-    text-decoration: no;
-    position: relative;
-    z-index: 1;
-    right: -3.5px;
-    top: 18px;
-    color: #fff;
-}
-@media (max-width:1220px){
-    .button-mobile{
-        display: block;
-    }
-    .menu-primary{
-        position: absolute;
-        background: #fff;
-        width: 70%;
-        margin-right: -70%;
-    }
-    .menu-primary ul{
-        flex-direction: column;
-    }
-    .menu-primary li{
-         border-top: 1px solid #0c0c0c;
-    }
-    .button:checked ~ .menu-primary{
-        margin: 0;
-    }
-}
-
-    
-
-/*innovamos soluciones background y botones*/
-
-.present-menu{
-    display: flex;
-    width: 100%;
-    height: 550px;
-    border: none;
     justify-content: center;
     align-items: center;
+}
+.menu li:hover .submenu {
+    display: block;
+    transition: ease-in-out 1s;
+}
+
+.bag{
+    position: relative;
+    left: 18.5px;
+    top: 20px;
+  
+}
+.bag a{
+    color: black;
+}
+.zero{
+  position: relative;
+  top: 30px;
+  left: 0px;
+   
+}
+.zero a{
+    color: #fff;
+    text-decoration: none;
+}
+.option-menu .button-mobile {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display:none;        
+    }
+    .button-mobile button{
+        color:#fff;
+        border: 5px solid black;
+        padding: 5px 5px 5px 5px;
+       background-color: orangered;
+    }
+    @media screen and (max-width:810px){
+        .container-menu{
+            margin: 0;
+        }
+        .menu{
+        display: none;
+        }
+        .option-menu .bag{
+            display: none;
+        }
+    
+        .option-menu .button-mobile {
+            display: block;
+           margin: 0;
+        }
+    }
+
+ 
+
+/*innovamos soluciones present menu*/
+.present-menu{
+  
+    width: 100%;
+    height:100vh;
+    border: none;
     background-image: url(http://pixartlatam.com/wp-content/uploads/2021/02/notebook.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    text-align: center;
-    overflow: hidden;
-    
-}
-
-
-
-.present-menu .text-innov {
-    width: 100%;
- color: #fff;
- font-size: 2.5em;
- font-weight: 300;
- letter-spacing:-2px;
-
-}
-.present-menu .text-innov h1{
-    margin-bottom: 50px;
-    font-weight: 100;
-}
-.present-menu .text-innov h1 strong{
-    font-weight: 700;
-}
-
-.button-innov a{
-    font-size: 0.8em;
-    display: inline-block;
-    text-transform: uppercase;
+    justify-content: center;
+    align-items: center
    
 }
 
+.present-menu .background-img{
+   position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #4054b2;
+    opacity: 0.22;
+  
+}
+.present-menu .innov-tb{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 160px;
+    margin: 0px 113px;
+    
 
+}
+.innov-tb .text-innov{
+
+    margin:0px;
+}
+.text-innov h1{
+    font-family: "poppins","sans serif";
+    font-size: 3.5em;
+    font-weight: 100;
+    color: #fff;
+    letter-spacing: -2px;
+}
+.text-innov h1 strong{
+    font-weight: 700;
+}
+.present-menu .button-innov{
+    
+  
+    margin:30px;
+  
+    font-size: 0.8em;
+    text-transform: uppercase; 
+}
 .button-innov  .button1{
+   
     letter-spacing: 1px;
     margin-right: 10px;
     padding: 16px 32px 16px 32px;
@@ -162,13 +196,14 @@ display:none ;
     background-color: #E07715;
     border-radius: 50px;
     border: none;
+    display: inline-block;
    
-     
    
 }
 
 
 .button-innov  .button2{
+   
     letter-spacing: 1px;
     margin-left: 10px;
     padding: 16px 32px 16px 32px;
@@ -177,803 +212,61 @@ display:none ;
     background-color: #fff;
     border-radius: 50px;
     border: none;
- 
+    display: inline-block;
 }
-
- .button-innov  :hover{
+.button-innov  :hover{
     transform:scale(1.10 );
     transition: all 0.5s;
    
 }
-
+@media screen and (max-width:768px){
+    .text-innov h1{
+        display: none;
+    }
+}
 /*elemento separador estilizado flechita*/
-
-.elementor-style svg{
+.element-style{
+    
     position: relative;
-    bottom: 170px;
-    width: 100%;
-    height: 100%; 
-    fill: #fff;
-    overflow: hidden;
-}
-.elementor-style .elementor-shape{
-    
-}
-
-   
-
-
-/*seccion empresa + efecto de transicion*/
-
-
-.section-empresa{
-    width: 100%;
-    height: 600px;
-    background-color: #fff;
-    font-family: 'poppins',sans-serif;
-    margin-top:5px;
-    padding: 30px; 
-  
-}
-.section-empresa .box{
-    font-family: "Poppins", Sans-serif;
-    color: #000000;
-    margin-bottom: 30px;
-    width: 100%;
-    overflow: hidden;
-}
-.section-empresa .box h3{
-    font-size: 2.3rem;
-}
-.section-empresa .box p{
-  
-    font-size: 1.1rem;
-    font-weight: 300;
-    line-height: 1.6em;
-}
-.section-empresa  a{
-    text-decoration: none;
-    color: white;
-    padding: 16px 32px 16px 32px;
-    background-color: #E07715;
-    border-radius: 50px;
-}
-.section-empresa .bottom-empresa{
-    display: inline-block;
-    position: relative;
-    top: 30px;  
- 
-}
-
-.bottom-empresa:hover{
-    transform:scale(1.10 );
-    transition: 0.5s;   
-}
-.section-empresa .tablets{
-    position: relative;
-    right: -600px;
-    bottom: 200px;
-    overflow: hidden;
-}
-.tablets img{
-    width: 500px;
-    
-    
-}
-/*Nuestras Soluciones y carrousel*/
-.section-solutions{
-    
-    width: 100%;
-    height: 700px;
     display: flex;
-    background-color: #E07715;
-    font-family: 'poppins',sans-serif;
-    align-items: center;
-    text-align: center;
-}
-
-
-
-.section-solutions .tittle-controls{
-    position: relative;
-    bottom: 90px;
-    left: 20px;
-}
-.section-solutions .tittle-controls h3{
-    color: #ffffff;
-    font-family: "Poppins", Sans-serif;
-    font-size: 2.5rem;
-    font-weight: 600;
-    text-transform: capitalize;
-    font-style: normal;
-    text-decoration: none;
-    letter-spacing: -2px;
-    
-}
-/*flechas y carrusel*/
-.carrusel-nuestras-soluciones .container-principal{
-    display: flex;
-    bottom: 30px;
-    align-items: center;
-    position: relative;
-    
-}
-.carrusel-nuestras-soluciones .container-principal .flecha-izquierda,
-.carrusel-nuestras-soluciones .container-principal .flecha-derecha{
-    position: absolute;
-    border: none;
-    background: transparent;
-    font-size: 40px;
-    height: 50%;
-    top: calc(50% - 25%);
-    line-height: 40px;
-    width:50px;
-    color: #fff;
-    cursor: pointer;
-    z-index: 200;
-   
-
-}
-.carrusel-nuestras-soluciones .container-principal .flecha-izquierda{
     left: 0;
-}
-.carrusel-nuestras-soluciones .container-principal .flecha-derecha{
-   right: 0;
-}
-/*carrusel*
-.carrusel-nuestras-soluciones .container-carrusel{
-    width:100%;
-    padding: 20px 0px;
-    overflow: hidden;
+    bottom: 100px;
     
-}
-.carrusel-nuestras-soluciones .container-carrusel .carrusel{
-    display: flex;
-    flex-wrap: nowrap;
-}
-.carrusel-nuestras-soluciones .container-carrusel .carrusel .elements{
-    min-width: 20%;
-    transition:.3s ease all;
-    box-shadow: 5px 5px 10px #fff(0,0,0, 0.3) ;
-}
-.carrusel-nuestras-soluciones .container-carrusel .carrusel .elements img{
-    width: 100%;
-    vertical-align: top;
-}
-
-.section-solutions .bottom-solutions{
-    display: inline-block;
-    position: relative;
-    top: 60px;
-    
-}
-.section-solutions .bottom-solutions .read2{
-    text-decoration: none;
-    color:#E07715 ;
-    padding: 16px 32px 16px 32px;
-    background-color: #fff;
-    border-radius: 50px;  
-}
-
-/*
- .box-text{
-    transform: translateX(100px);
-    transition-duration: 0.8s;
-    transition-timing-function:ease-in-out;
-}
-
-.box-p {
-    width: 420px;
-    transform: translateY(-100px);
-    transition-duration: 1s;
-    transition-timing-function:ease;
-}
-
-
-
-
-
-}
-.section-empresa .bottom-empresa {
-
-position: relative;
-top: 9rem;
-right:30rem ;
-
-}
-.bottom-empresa :hover{
-    transform:scale(1.15);
-    transition: all 0.5s;
-}
-.section-empresa .box-img-empresa{
-display: block;
-
-}
-.section-empresa .box-img-empresa img{
-width: 400px;
-height: 400px;
-transform: translateY(-100px);
-transition-duration: 1s;
-transition-timing-function:ease;
-}
-
-
-
-    
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /*
- html{
-     border: none;
- }
- 
- body{
-    font-family:'poppins', 'sans-serif';
-    border: none;
- }
- 
- header {
-     position: relative;
-     display: flex;
-     flex-direction:column ;
-     justify-content: center;
-     width:100%;
-     height:100%;
-     text-align: center;
-     background-color:transparent;
-     overflow: hidden;
-      
- }
- .header--nav{
-     display: flex;
-     justify-content: flex-end;
-     background-color: #fff;
- }
- .header--nav-section{
-    
-     display: flex;
-     margin-bottom: auto;
-     list-style: none;
-     justify-content: center;
-     align-items: center;
-     
- }
- .header--nav-section a{
-     text-decoration: none;
-     font-size: 20px;
-     padding: 15px;
-     margin-right: 5px;
-     color: #000;
- 
- }
- .header--nav-section img {
-    
-     margin-right: 30px;
- }
- 
- .header--nav-section a .count{
-     position: relative;
-     right: 57px;
-     top: 6px;
-     color: #fff
- }
- 
- /*innovamos soluciones + botones contacto producto*
- .header--present-menu{
- height: 500px;
- border: none;
- background-image: url(https://i2.wp.com/hipertextual.com/wp-content/uploads/2021/03/xiaomi-mi-laptop-pro-5-1-scaled.jpg?fit=2560%2C1348&ssl=1);
- background-position: center;
- background-size: cover;
- background-attachment: fixed;
- text-align: center;
- display: block;
- }
- .header--present-menu h1{
- margin: 0;
- padding: 0;
- height: 100%;
- display: flex;
- align-items: center;
- justify-content: center;
- color: #fff;
- font-size: 3.9em;
- font-weight: 300;
- letter-spacing:-2px;
-  ;
- }
- .header--present-menu h1 strong{
-     padding: 10px;
-     font-weight: 700;   
- }
- 
- 
- /*botones productos y contacto*
- .header--present-menu .header--button{
-     display: block;
-     margin-top: 30px;
-     font-size: 0.8rem;
-     font-weight:700;
-     letter-spacing: 1.5px;
-     text-decoration: none;
-     text-transform: uppercase;
-     
- }
- .header--present-menu .header--button .button-contact{
-     color: #fff;
-     background-color: #E07715;
-     position: absolute;
-     left: calc(50% - 150px);
-     bottom: 130px;
-     width: 80px;
-     height: 15px;
-     border-radius: 50px;
-     padding: 16px 32px 16px 32px;
-     border: none
- }
- .header--present-menu .header--button .button-products{
-     color: black;
-     background-color: #fff;
-     position: absolute;
-     right: calc(50% - 190px);
-     bottom: 130px;
-     width: 90px;
-     height: 15px;
-     border-radius: 50px;
-     padding: 15px 32px 16px 32px;
-     border: none
- }
- /*hover de botones de innovamos soluciones*
- .header--present-menu .header--button :hover{
-     transform: scale(1.15);
-     transition: all .3s
- }
- /*main seccion empresa*
- .main--section-empresa{
- 
-   background-color: #fff;
-   display: block;
-   padding: 6% 0% 6% 0%;
-   
- }
- .main--section-empresa .main--box-empresa {
-     position: relative;
-     box-sizing: content-box;
-     width: 100%;
-     height: 100%;
-     left: 5em;
-     padding: 20px;
-     color: #0c0c0c;
-     font-family: "Poppins", Sans-serif;
-    
- }
- 
- .main--section-empresa .main--box-empresa h3{
-     font-size: 37.5px;
-     font-weight: 600;
-     letter-spacing: -2px;
- }
- .main--section-empresa .main--box-empresa p{
-     font-size: 1.1em;
-     font-weight: 1.6em;
-     margin-block-start: 1em;
-     margin-block-end: 1em;
-     margin-inline-start: 0px;
-     margin-inline-end: 0px;
- }
- .main--section-empresa .main--box-empresa a{
-     display: block;
-     margin-top: 50px;
-     font-size: 0.7rem;
-     font-weight:700;
-     letter-spacing: 1.5px;
-     text-align: left;
-     text-decoration: none;
-     text-transform: uppercase;
- }
- .main--section-empresa .main--box-empresa a .button-read{
-     color: #fff;
-     background-color: #E07715;
-     position: absolute;
-     width: 70px;
-     height: 10px;
-     border-radius: 50px;
-     padding: 15px 32px 16px 32px;
-     border: none;
- }
- 
- .main--section-empresa .main--box-empresa .main--box-img{
-  position: relative;
-  left: 40em;
-  bottom: 4em;
-  padding: 30px;
-  
- }
- .main--box-img img{
-   width: 25%;
-   height: 25%;
- }
-
-.main--section-solutions{
-
-    background-color: #E07715;
-    padding: 6% 0% 6% 0%;
-    display: block;
-   
-}
-.main--section-solutions h2{
-    padding: 0;
-    margin-bottom: 70px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 2.5rem;
-    font-weight: 600;
-    letter-spacing: -2px;
-}
-/*carousel*/
-.carousel{
-    width: 100%;
-    height: auto;
-    margin: 0px 60px;
-}
-.slick-list{
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: fit-content;
-    height: 384px;
-    padding: 10px 0px;
-    max-width: 90vw;
-    overflow: hidden;
-}
-.slick-track{
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    transition: .5s ease-in-out;
-}
-.slick{
-    position: relative;
-    width: 275px;
-    padding: 0 18px;
-    float: left;
-    box-sizing: border-box;
-    display: flex;
-    height: 100%;
-}
-.slick a img{
-    object-fit: cover;
-    height: 300px;
-    width: 100%;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .5);
-    transition: .3 ease-in-out;
-}
-.slick a img:hover{
-    opacity: .85;
-
-}
-/*botones del carrusel*/
-.slick-arrow{
-    border-radius: 30px;
-    background-color: transparent;
-    position: absolute;
-    z-index: 4;
-    width: 48px;
-    height: 48px;
-    text-align: center;
-    
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .15);
-    border: 0;
-    cursor: pointer;
-}
-.slick-arrow:focus{
-    outline: 0;
-}
-.slick-arrow svg{
-    
-    width: 100%;
-    height: 100%;
-    color: red
-}
-.slick-prev{
-    left: 0px;
-}
-.slick-next{
-  
-    right: 0px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*NUESTRAS SOLUCIONES + CARRUSEL
-.section-solutions{
-    
-    background-color: #E07715;
-    padding: 6% 0% 6% 0%;
-    display: block;
-}
-.contenedor{
-   width: 90%;
-   margin: auto; 
-}
-.text-tittle-solutions{
-    padding: 0;
-    margin-bottom: 70px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-}
-.text-tittle-solutions h1{
-    font-size: 2.5rem;
-    font-weight: 600;
-    letter-spacing: -2px;
-}
-/*contenedor de titulo controles*
-.titulo-controles{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-.titulo-controles .indicadores button{
-   background: #fff;
-   height: 3px;
-   width: 10px;
-   cursor: pointer;
-   border: none;
-   margin-right: 2px; 
-}
-
-/*contenedor principal y flechas*
-
-.text-tittle-solutions .contenedor-principal{
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-.text-tittle-solutions .contenedor-principal .arrow-left,
-.text-tittle-solutions .contenedor-principal .arrow-right{
-    position: absolute;
-    border: none;
-    background: transparent;
-    font-size: 40px;
-    height: 50%;
-    top: calc(50% - 25%);
-    line-height: 40px;
-    width: -50%;
-    color: #fff;
-    cursor: pointer;
-    z-index: 500;
-    transition: .2s ease all;
-}
-.text-tittle-solutions .contenedor-principal .arrow-left{
-    left: 0;
-}
-.text-tittle-solutions .contenedor-principal .arrow-right{
     right: 0;
-}
+    width: 100%;
+    line-height: 0;
+    
+    }
+    .element-style svg{
+        position: absolute;
+        width: calc(100% + 0px);
+        height: 100px;
+        fill: #fff;
+    }
+/*seccion empresa*/
 
-/*carousel*/
-
-
-
-/*todo lo que llevo desde aca*/
-/*{
-    box-sizing:inherit;
-   
-}
-
-header{
+.section-empresa{
+    width: 100%;
+    height: 80vh;
     background-color: #fff;
-    margin: 0;
-    padding: 0px;
-    
+    padding: 81.9531px 0px;
 }
-body{
-    font-family:'poppins' sans-serif;
-}
-
-.conteiner{
-    
-    width: 90%;
-    max-width: 1200px;
-    align-items: center;
-    padding: 0;
-    margin: 15px;
-    overflow: hidden;
+.section-empresa .all{
+    display: flex;
   
 }
-.box-icon{
-    z-index: 0;
-    position: absolute;
-    margin-left: 38em;
-    align-items: center;
-    padding: 0px;
-    font-size: 30px;
-}
 
-.box-icon .cart-conteiner{
-    z-index: 0;
-    color: black;
-    font-size: 20px;
-    
-}
-.box-zero{
-    position: relative;
-    z-index: 1;
-    top: 0.4em;
-    margin-right: 2.4em;
-   
-}
-.box-zero a{
-    text-decoration:none;
-    color: #fff
-    
-   
-   
-}
-
-   
-
-/*MENU
-
-.menu-navegation{
-    padding: 0;
+.section-empresa .empresa-tpr{
+    width: 40%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
+    flex-direction: column;
+    padding: 30px;
 }
-
-.menu-navegation .logo .custom-logo{
-   align-items: center; 
-   padding: 50px;
+.empresa-tpr .tittlem{
+    margin-bottom: 1em;
+}
+.empresa-tpr .tittlem h3{
     
-}
-.logo img{
-    position: relative;
-    left: 60px;
-}
-
-
-.menu-primary li{
-    
-    list-style-type:none;
-    display: inline-block;
-    
-
-}
-.menu-primary li .menu-link{
-    font-family: 'poppins',sans-serif;
-    padding: 1em;
-    
-}
-.menu-primary li .menu-link-inicio{
-    color: #d1640b;
-    font: 'poppins',sans-serif;;
-}
-.menu-primary a{
-    text-decoration: none;
-    font-size:  17px ;
-    color: black;
-    padding: 0 5px;
-}
-/*MENU DESPLEGABLE*/
-
-
-
-
-/*PRESENT MENU
-
-.present-menu{
-    height:  500px;
-    background-image: url(https://i2.wp.com/hipertextual.com/wp-content/uploads/2021/03/xiaomi-mi-laptop-pro-5-1-scaled.jpg?fit=2560%2C1348&ssl=1);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    }
-    .conteiner-text{
-        padding: 0;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-    }
-
-.present-menu h1{
-    font-size: 60px;
-    font-weight: 300;
-}
-
-.present-menu h1 strong{
-    font-weight: 700;
-}
-
-
-
-.button1{
-    color:#fff;
-    text-decoration: none;
-    margin-right: 40px;
-    padding: 10px 30px;
-    background-color: #E07715;
-    border-style: solid;
-    border-width: 1px 1px 1px 1px;
-    border-color: #E07715;
-    border-radius: 50px 50px 50px 50px;
-}
-
-.button2{
-    color: black;
-    text-decoration: none;
-    margin-left: 40px;
-    padding: 10px 30px;
-    background-color: #fff;
-    border-style: solid;
-    border-width: 1px 1px 1px 1px;
-    border-color: #fff;
-    border-radius: 50px 50px 50px 50px;
-}
-
-.text-button{
-    letter-spacing: 2px;
-    font-size:20px ;
-    font-weight: 300;
-}
-
-/* seccion empresa
-.section-empresa{
-    box-sizing: content-box;
-    position: absolute;
-    padding: 6% 0% 6% 0%;
-    background-color: #fff;
-    display: block;
-}
-
-.box-tittle1{
-  position: relative;
-  left: 10em;
-}
-.box-tittle1 h3{
-    bottom: 0.5em;
     color: #0c0c0c;
     font-family: "Poppins", Sans-serif;
     font-size: 2.5rem;
@@ -982,157 +275,501 @@ body{
     font-style: normal;
     text-decoration: none;
     letter-spacing: -2px;
-    
 }
-.box-text-empresa{
-    position: relative;
-    left: 8em;
+.empresa-tpr .parrafo{
+    margin-bottom: 1em;
 }
-
-.box-text-empresa p{
+.empresa-tpr .parrafo p{
     color: #000000;
     font-family: "Poppins", Sans-serif;
     font-size: 1.1rem;
     font-weight: 300;
     line-height: 1.6em;
-    padding: 10px 30px;
+}
+.section-empresa .read-more{
+   
+    margin-top: 30px;
 }
 
-.bottom-empresa{
-    position: relative;
-    top: 30px;
-    left: 12em;
-}
-.bottom-empresa .read{
-    color:#fff;
+.section-empresa  .bottom{
+   
     text-decoration: none;
-    padding: 10px 30px;
+    color: white;
+    padding: 16px 32px 16px 32px;
     background-color: #E07715;
-    border-style: solid;
-    border-width: 1px 1px 1px 1px;
-    border-color: #E07715;
-    border-radius: 50px 50px 50px 50px;
+    border-radius: 50px;
+    display: inline-block;
 }
-.box-img-empresa {
-  position: relative;
-  left: 15em;
-  bottom: 50em; 
-    box-sizing: content-box;
-    padding: 50% 0% 0% 50%;
+
+.section-empresa .read-more .bottom:hover{
+    
+    transform:scale(1.10 );
+    transition: 0.5s;   
+}
+
+
+.section-empresa .tablets{
+    display: flex;
+    width: 100%;
+    min-width: 150px;
+    max-width: 410px;
+    margin: 0 auto;
+    padding: 30px;
+    
+}
+
+.section-empresa .tablets img{
+    width: 410px;
+    height: auto;
+}
+@media screen and (max-width:810px){
+    .section-empresa{
+        height: 150vh;
+    }
+ 
+    .section-empresa .all{
+        display: block;
+        position: relative;
+        left: 0;
+        bottom: 0;
+    }
+    .section-empresa .empresa-tpr{
+        width: 90%;
+    }
+ 
+}
+
+/*elemento flechita estilizado arriba*/
+.element-style-up{
+    
+    transform: rotate(180deg);
+    position: relative;
+    display: flex;
+    left: 0;
+    top: 1px;
+    right: 0;
+    width: 100%;
+    line-height: 0;
+}
+.element-style-up svg{
+    
+        position: absolute;
+        width: calc(100% + 0px);
+        height: 60px;
+        fill: #E07715;;
+}
+/*nuestras soluciones carrusel*/
+.section-solutions{
+ 
+    width: 100%;
+    height: 100vh;
+    background-color: #E07715;
+}
+.section-solutions .our-solutions{
+  display: flex;
+  justify-content: center; 
+}
+.our-solutions  h3{
+    font-family: "poppins","sans serif";
+    font-size: 2em;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+}
+
+.Carousel{
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.slick-list{
+    display: flex;
+    padding: 10px 0px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+.slick-track{
+
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+.slick{
+   
+    width: 400px;
+    padding: 0 8px;
+    display: flex;
+    height: 100%;
+}
+.slick a img{
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+    transition: .3s ease-in-out;
+}
+.slick a img:hover{
+    opacity: .85;
+}
+/*buttons*/
+.slick-arrow{
+    border-radius: 30px;
+    background-color: transparent;
+    position: relative;
+    top: 130px;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+    border: 0;
+    cursor: pointer;
+}
+.slick-arrow:focus{
+    outline: 0;
+}
+.slick-arrow svg{
+    
+    height: 100%;
+    color: black
+}
+.slick-prev{
+    
+    left: 30px;
+}
+.slick-next{
+    right: 30px;
+}
+
+
+
+.section-solutions .see-more{
+    display: flex;
+    justify-content: center;
+
+}
+
+.section-solutions .see-more .button{
+    text-decoration: none;
+    color: #E07715;;
+    padding: 16px 32px 16px 32px;
+    background-color:#fff; 
+    border-radius: 50px;
+    letter-spacing: 2px;
+}
+
+
+/*elemento flechita naranja pa abajo*/
+.element-orange{
+    
+    z-index: 33;
+    position: relative;
+    display: flex;
+    left: 0;
+    bottom:0px;
+    right: 0;
+    width: 100%;
+    line-height: 0;
    
 }
-.box-img-empresa img{
-    height: auto;
-    max-width: 100%;
-    background: transparent;
+.element-orange svg{
     
+        position: absolute;
+        width: calc(100% + 0px);
+        fill:#E07715; ;
 }
+/*nuestro proceso*/
 
-/*header{
-    position: relative;
-    left: 0;
-    right: 0;
-    text-align: center;  
-
-
-
-
-/*a{
-    text-decoration: none;
-    color:  #030303;
-    background: transparent;
-    
-}*/
-
-/*ul{
-    list-style: none;
-}*/
-/*.container{
-    
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-}*/
-/*Navegation
-.nav-main {      
-   font-size: 16px;
-   font-size: 1rem;
-   font-family:'poppins', sans-serif;
-   display: flex;
-   justify-content: space-between; 
-   align-items: center;
-   height: 100px;
-   padding: 0px 1px;
-
-}*/
-
-
-/*.nav-main ul{
-    display: flex;
-    margin: 0;
-    list-style: none;
-    
-}*/
-
-/*.nav-main ul li{
-    display: flex;
-    column-gap: 8px;
-}*/
-/*.nav-main ul li a{
-    flex-wrap: wrap;
-    display: block;
-    padding: 0.5rem 1rem;
-}*/
-
-/*.nav-main ul.nav-menu{
-    flex: 1;
-    margin-left: 50px;
-}*/
-/*div{
-    display: block;
-}*/
-
-/*.shopping-menu-car{
-display: flex;   
-padding: 0px;
-flex-wrap: wrap;
-}*/
-
-/*.shopping-car{
-    position: absolute;
-    right: 0 2em;
-    top: 2.2em;
-    
-
-
-}
-  
-/*.car-menu{
-   position: relative;
-   right: -9.5px;
-      
-     color: #fff;
-  }*/
-
-/*Imagen fija*/
-
-/*.imagen_fondo{
-    background-image: url(https://fotocreativo.com/wp-content/uploads/2020/02/laptops-para-edicion-de-video.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+.section-process{
+    width: 100%;
+    height: 110vh;
+    border: none;
+    background-image: url(http://pixartlatam.com/wp-content/uploads/2021/02/digital-marketing-seo-google-1725340.jpg);
+    background-position: center;
     background-size: cover;
-    height: 20em;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center
+
 }
 
-.titulo_banner{
-    color: #fff;
-    font-size: 3.4em;
-    font-weight: 300;
-    text-align: center ;
+.section-process .back-process{
+    position:absolute;
+    width: 100%;
+    height: 110%;
+    background-color: #00153d;
+    opacity: 0.5;
+}
+
+.section-process .process-all{
+    position: relative;
+    padding: 79.7969px 0px 34.1875px;
+}
+.process-all .our-process{
+    position: relative;
+    top: 100px;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+   
+}
+.our-process .tittlep{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.our-process .tittlep h2{
+    color: #ffffff;
+    font-family: "Poppins", Sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-style: normal;
+    text-decoration: none;
     letter-spacing: -2px;
+}
+.our-process .p-software{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.our-process .p-software p{
+    color: #ffffff;
+    font-family: "Poppins", Sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 1.6em;
+}
+
+.section-process .container-process{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    position: relative;
+    top: 8rem;
+}
+.section-process .container-process .text-llave{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+ 
+.container-process .text-close{
+    width: 35%;
+    display: flex;
+  
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+.container-process .text-globito{
+    width: 25%;
+    display: flex;
+   
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+.container-process .img-process{
+margin-bottom: 50px;
+}
+/*section-3ra*/
+.section-3ra{
+    position: relative;
+    height: 100%;
+    width: 100%;  
+}
+.section-3ra .all-3ra{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.section-3ra .all-3ra img{
+   width: 100%;
+}
+.section-3ra .all-3ra .column3{
     
+    display: flex;
 }
-strong{
-    font-weight: 700;
+.section-3ra .all-3ra .column2b{
+    height: 100%;
+    position: relative;
+    left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
+.section-3ra .all-3ra .column2b .tarjet{
+    width: 100%;
+}
+.section-3ra .all-3ra .column2b .see-all{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.section-3ra .all-3ra .column2b .see-all a{
+    font-family: "Poppins", Sans-serif;
+    font-size: 0.8rem;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    fill: #ffffff;
+    color: #ffffff;
+    background-color: #E07715;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: rgba(223,98,54,0);
+    border-radius: 58px 58px 58px 58px;
+    padding: 13px 41px 13px 43px;
+}
+.section-3ra .all-3ra .column2b .b450m{
+    width: 100%;
+    margin-right: 110px;
+}
+@media screen and (max-width:1028px) {
+   
+    .section-3ra {
+        height: 80%;
+        display: block;
+    }
+    .section-3ra .all-3ra .column2b .see-all{
+        position: relative;
+        bottom: 100px;
+       
+    }
+    .section-3ra .all-3ra .column2b .see-all a{
+        letter-spacing: 0px;
+        font-size: 0.8rem;
+    }
+}
+
+/*por que escogernos*/
+.section-escogernos{
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    background-image: url(http://pixartlatam.com/wp-content/uploads/2020/12/code-coding-programming-2620118.jpg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-escogernos .back-escogernos{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00153d;
+    opacity: 0.5;
+}
+.section-escogernos .all-escogernos{
+    
+    position: relative;
+    top: 3rem;
+
+
+}
+.section-escogernos .tittlehp{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.section-escogernos .tittlehp .tittleh{
+   display: flex;
+   justify-content: center;
+}
+.tittlehp .tittleh h2{
+    
+    color: #ffffff;
+    font-family: "Poppins", Sans-serif;
+    font-size: 2.1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-style:normal;
+    text-decoration: none;
+    letter-spacing: -2px;
+}
+.section-escogernos .tittlehp .parrafoen{
+    display: flex;
+    justify-content: center;
+}
+.tittlehp .parrafoen p{
+    color: #ffffff;
+    font-family: "Poppins", Sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none;
+    letter-spacing: -1.3px;
+}
+
+.section-escogernos .sections{
+    margin: 0px 30px;
+    position: relative;
+    top: 100px;
+    display: flex;
+    text-align: center;
+}
+.section-escogernos .sections .implement{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.section-escogernos .sections .implement a{
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+.section-escogernos .sections .implement h3 {
+    font-family: "Poppins", Sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 1.5em;
+    color: #ffffff;
+ 
+}
+.section-escogernos .sections .implement .parrabox1{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.section-escogernos .sections .implement p{
+   
+    color: #ffffff;
+    font-family: "Poppins", Sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 2.2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
