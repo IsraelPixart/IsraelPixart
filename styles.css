@@ -280,17 +280,18 @@ html{
 
 .section-empresa{
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     background-color: #fff;
     padding: 81.9531px 0px;
 }
 .section-empresa .all{
     display: flex;
-    height: 80vh;
+    height: 100%;
   
 }
 
 .section-empresa .empresa-tpr{
+  
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -314,10 +315,10 @@ html{
     margin-bottom: 1em;
 }
 .empresa-tpr .parrafo p{
-    z-index: 38;
+    width: 80%;
     color: #000000;
     font-family: "Poppins", Sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     font-weight: 300;
     line-height: 1.6em;
 }
@@ -346,38 +347,54 @@ html{
 .section-empresa .tablets{
     
     
-    width: 100%;
-    max-width: 410px;
+    width: 50%;
+    height: 100%;
+    display: flex;
     margin: 0 auto;
     padding: 30px;
+    justify-content: flex-end;
     
 }
 
 .section-empresa .tablets img{
-    width: 410px;
-    height: auto;
+    width: 510px;
+  
 }
 @media screen and (max-width:810px){
-
- 
+    .section-empresa{
+        width: 100%;
+        height: 110vh;
+        background-color: #fff;
+        padding: 0px 0px;
+    }
     .section-empresa .all{
-        display: flex;
-        flex-direction: column;
-       
+        display: block;
     }
     .section-empresa .empresa-tpr{
-        width: 90%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
     }
-    .section-empresa .all .tablets{
 
-        height: 0%;
+    .section-empresa .tablets{
+    
+    
+        width: 30%;
+        height: 50%;
+        display: block;
+        margin: 0 auto;
+        padding: 30px;
+        justify-content: flex-end;
         
     }
-    .section-empresa .all .tablets img{
-       
-        
-        width: 300px;
+    
+    .section-empresa .tablets img{
+        width: 210px;
+      
     }
+
+   
  
 }
 
@@ -594,7 +611,7 @@ html{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
     position: relative;
     top: 5rem;
@@ -627,7 +644,60 @@ html{
 margin-bottom: 50px;
 }
 @media screen and (max-width:810px){
-    
+    .section-process .container-process{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 2rem;
+    }
+}
+@media screen and (max-width:650px){
+    .section-process .container-process{
+        width: 100%;
+        height: 100%;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        top: 2rem;
+        }
+        .container-process .img-process{
+            margin-bottom: 0px;}
+        .section-process .container-process .text-llave{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #fff;
+        }
+         
+        .container-process .text-close{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #fff;
+        }
+        .container-process .text-globito{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #fff;
+        }
+        .section-process .process-all{
+            padding: 10px;
+        }
+}
+@media screen and (max-width:411px){
+    .section-process .process-all{
+        justify-content: center;
+        align-items: center;
+        padding-top:150px;
+    }
 }
 /*section-3ra*/
 .section-3ra{
@@ -680,6 +750,12 @@ margin-bottom: 50px;
     border-color: rgba(223,98,54,0);
     border-radius: 58px 58px 58px 58px;
     padding: 13px 41px 13px 43px;
+    transition:  all 300ms ease
+}
+.section-3ra .all-3ra .column2b .see-all a:hover{
+background-color: #fff;
+color: #E07715;
+border: solid 1px #E07715;
 }
 .section-3ra .all-3ra .column2b .b450m{
     width: 100%;
