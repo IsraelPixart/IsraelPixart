@@ -227,21 +227,54 @@ html{
 /*elemento separador estilizado flechita*/
 .element-style{
     
-    position: relative;
-    display: flex;
+    overflow: hidden;
+    position: absolute;
     left: 0;
-    bottom: 100px;
-    
-    right: 0;
+  bottom: -121px;
     width: 100%;
+    max-height:100%;
     line-height: 0;
+    
     
     }
     .element-style svg{
-        position: absolute;
+        
         width: calc(100% + 0px);
-        height: 100px;
+       height: 200px;
         fill: #fff;
+    }
+    @media screen and (max-width:1198px){
+        .element-style{
+            overflow: hidden;
+    position: absolute;
+    left: 0;
+  bottom: -171px;
+    width: 100%;
+    
+    line-height: 0;
+        }
+    }
+    @media screen and (max-width:892px){
+        .element-style{
+            overflow: hidden;
+    position: absolute;
+    left: 0;
+  bottom: -221px;
+    width: 100%;
+    
+    line-height: 0;
+        }
+    }
+    @media screen and (max-width:810px){
+        .element-style{
+            overflow: hidden;
+    position: absolute;
+    left: 0;
+  bottom: -111px;
+    width: 100%;
+    
+    line-height: 0;
+        }
     }
 /*seccion empresa*/
 
@@ -253,6 +286,7 @@ html{
 }
 .section-empresa .all{
     display: flex;
+    height: 80vh;
   
 }
 
@@ -280,6 +314,7 @@ html{
     margin-bottom: 1em;
 }
 .empresa-tpr .parrafo p{
+    z-index: 38;
     color: #000000;
     font-family: "Poppins", Sans-serif;
     font-size: 1.1rem;
@@ -309,9 +344,9 @@ html{
 
 
 .section-empresa .tablets{
-    display: flex;
+    
+    
     width: 100%;
-    min-width: 150px;
     max-width: 410px;
     margin: 0 auto;
     padding: 30px;
@@ -323,18 +358,25 @@ html{
     height: auto;
 }
 @media screen and (max-width:810px){
-    .section-empresa{
-        height: 150vh;
-    }
+
  
     .section-empresa .all{
-        display: block;
-        position: relative;
-        left: 0;
-        bottom: 0;
+        display: flex;
+        flex-direction: column;
+       
     }
     .section-empresa .empresa-tpr{
         width: 90%;
+    }
+    .section-empresa .all .tablets{
+
+        height: 0%;
+        
+    }
+    .section-empresa .all .tablets img{
+       
+        
+        width: 300px;
     }
  
 }
@@ -343,36 +385,42 @@ html{
 .element-style-up{
     
     transform: rotate(180deg);
-    position: relative;
-    display: flex;
+    position: absolute;
+   
     left: 0;
-    top: 1px;
+    bottom: -800px;
     right: 0;
     width: 100%;
-    line-height: 0;
+    
+   
 }
 .element-style-up svg{
     
-        position: absolute;
+        
         width: calc(100% + 0px);
-        height: 60px;
-        fill: #E07715;;
+        
+        fill: #ffffff;;
 }
+
 /*nuestras soluciones carrusel*/
 .section-solutions{
  
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: #E07715;
 }
 .section-solutions .our-solutions{
+    position: relative;
+    top: 100px;
   display: flex;
   justify-content: center; 
 }
-.our-solutions  h3{
+.section-solutions .our-solutions  h3{
     font-family: "poppins","sans serif";
     font-size: 2em;
     font-weight: 800;
+    text-transform: capitalize;
+    font-style: normal;
     color: #fff;
     letter-spacing: -2px;
     text-transform: uppercase;
@@ -381,6 +429,7 @@ html{
 .Carousel{
     margin: 20px;
     width: 100%;
+    
     display: flex;
     justify-content: center;
 }
@@ -463,27 +512,23 @@ html{
 /*elemento flechita naranja pa abajo*/
 .element-orange{
     
-    z-index: 33;
-    position: relative;
+   z-index: 33;
+    position: absolute;
     display: flex;
-    left: 0;
-    bottom:0px;
-    right: 0;
     width: 100%;
-    line-height: 0;
-   
+   height: 20%;
 }
 .element-orange svg{
-    
-        position: absolute;
+  
+      
         width: calc(100% + 0px);
-        fill:#E07715; ;
+        fill: #fff;; ;
 }
 /*nuestro proceso*/
 
 .section-process{
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     border: none;
     background-image: url(http://pixartlatam.com/wp-content/uploads/2021/02/digital-marketing-seo-google-1725340.jpg);
     background-position: center;
@@ -497,7 +542,7 @@ html{
 .section-process .back-process{
     position:absolute;
     width: 100%;
-    height: 110%;
+    height: 100%;
     background-color: #00153d;
     opacity: 0.5;
 }
@@ -507,8 +552,8 @@ html{
     padding: 79.7969px 0px 34.1875px;
 }
 .process-all .our-process{
-    position: relative;
-    top: 100px;
+    
+    top: 0px;
     width: 100%;
     display:flex;
     flex-direction: column;
@@ -552,7 +597,7 @@ html{
     justify-content: space-around;
     text-align: center;
     position: relative;
-    top: 8rem;
+    top: 5rem;
 }
 .section-process .container-process .text-llave{
     width: 25%;
@@ -580,6 +625,9 @@ html{
 }
 .container-process .img-process{
 margin-bottom: 50px;
+}
+@media screen and (max-width:810px){
+    
 }
 /*section-3ra*/
 .section-3ra{
@@ -656,6 +704,7 @@ margin-bottom: 50px;
 
 /*por que escogernos*/
 .section-escogernos{
+    display: block;
     width: 100%;
     height: 100vh;
     background-color: #ffffff;
@@ -672,9 +721,11 @@ margin-bottom: 50px;
     opacity: 0.5;
 }
 .section-escogernos .all-escogernos{
-    
+    width: 100%;
+    height: 100vh;
     position: relative;
     top: 3rem;
+
 
 
 }
@@ -717,12 +768,15 @@ margin-bottom: 50px;
 .section-escogernos .sections{
     margin: 0px 30px;
     position: relative;
-    top: 100px;
+    top: 30px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 .section-escogernos .sections .implement{
     width: 40%;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -734,7 +788,7 @@ margin-bottom: 50px;
 }
 .section-escogernos .sections .implement h3 {
     font-family: "Poppins", Sans-serif;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 600;
     text-transform: none;
     font-style: normal;
@@ -759,6 +813,181 @@ margin-bottom: 50px;
     text-decoration: none;
     line-height: 2.2em;
 }
+@media screen and (max-width:1028px){
+
+}
+
+/*estamos para ayudarte*/
+
+.section-help{
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    background-image: url(http://pixartlatam.com/wp-content/uploads/2021/01/nesa-by-makers-701360-unsplash.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.section-help .back-help{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00153d;
+    opacity: 0.5;
+}
+.section-help .tittle-bottom{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.section-help .tittle-bottom .tittlewah h2{
+    color: #ffffff;
+    letter-spacing: -2px;
+    font-family: "Poppins", Sans-serif;
+    font-size: 39px;
+    
+    font-weight: 500;
+    text-transform: capitalize;
+    font-style:normal;
+    text-decoration: none;
+
+}
+.section-help .tittle-bottom .contact-us {
+    margin-top: 30px;
+  
+}
+.section-help .tittle-bottom .contact-us a{
+    font-size: 0.8rem;
+    text-decoration: none;
+    color:#fff ;
+    text-decoration: none;
+    padding: 12px 28px 12px 28px;
+    background-color:#E07715; 
+    border-radius: 50px;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+.section-help .tittle-bottom .contact-us a:hover{
+    transform:scale(1.10 );
+    transition: 0.5s;   
+}
+/*footer*/
+.pie-pagina{
+    width: 100%;
+    background-color: #ffffff;
+    
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    border-color: #EFEEF4;
+    
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font: 15px 'poppins', sans-serif;
+   padding: 104px 0px 80px; 
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+    align-items: center;
+    
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 100px;
+}
+.pie-pagina .grupo-1 .box h3{
+    margin-bottom: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+.pie-pagina .grupo-1 .box .red-social{
+    text-align: center;
+}
+.pie-pagina .grupo-1 .box p{
+    width: 85%;
+    margin-bottom: 110px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    width: 35px;
+    color: #ffffff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    border-radius: 50%;
+    transition:  all 300ms ease;
+    
+}
+.pie-pagina .grupo-1 .red-social a .grupo-1 .red-social a:hover{
+    color: greenyellow;
+}
+.pie-pagina .grupo-1 .box-list h3{
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box-list ul{
+    padding: 0;
+}
+.pie-pagina .grupo-1 .box-list ul li{
+   
+    margin-bottom: 15px;
+    list-style: none;
+
+}
+.pie-pagina .grupo-1 .box-list ul li a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    transition:  all 300ms ease
+}
+.pie-pagina .grupo-1 .box-list ul li a:hover{
+    color: chartreuse;
+}
+.pie-pagina .grupo-2{
+    background-color: #ffffff;
+    padding: 15px 10px;
+    text-align: center;
+    color: black;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap:30px;
+    padding: 35px 0px;
+}
+
+    
+}
+
+
+
+
 
 
 
