@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   
     <link rel="stylesheet" href="./styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,16 +15,71 @@
      title="Pixart » Feed" href="http://pixartlatam.com/index.php/feed/">
      <link rel="alternate" type="application/rss+xml"
       title="Pixart » Feed de los comentarios" href="http://pixartlatam.com/index.php/comments/feed/">
-      <script defer src="main.js"></script>
+       <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap" rel="stylesheet">
+   
+     
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script src="https://kit.fontawesome.com/474a9051d7.js" crossorigin="anonymous"></script>
-    
+</head>
 <body>
-   
-    <!--inicio,navegador,logo,icono de bolso y 0-->
+   <header>
+ 
+        <span class="nav-bar" id="btnmenu"><i class="fas fa-bars fa-2x"></i></span>
+        <div class="photo"></div>
+        <nav class="main nav">
+            
+            <div class="logo">
+                     
+                <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQGIIgRS4vXHvQ/company-logo_200_200/0/1613072690013?e=2159024400&v=beta&t=MA-qXxgcHUpjzd6cY6cv0QEVaao3OkwcQ5sFN69EtlQ" 
+                class="custom-logo" alt="Pixart">
+                </div>
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="" class="menu__link">Inicio</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Soluciones</a></li>
+                <li class="menu__item container-submenu">
+                    <a href="#" class="menu__link submenu-btn">Productos <i class="fas fa-angle-down"></i></a>
+                     <ul class="submenu">
+                         <li class="menu__item"><a href="" class="menu__link">Franco</a></li>
+                         <li class="menu__item"><a href="" class="menu__link">Infraestructura</a></li>
+                         <li class="menu__item"><a href="" class="menu__link">Sistemas informaticos</a></li>
+                     </ul>
+
+                </li>
+                <li class="menu__item container-submenu ">
+                    <a href="#" class="menu__link submenu-btn">Categorias <i class="fas fa-angle-down"></i></a>
+                    <ul class="submenu">
+                        <li class="menu__item"><a href="" class="menu__link">Franco</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Infraestructura</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Sistemas informaticos</a></li>
+                    </ul>
+                    
+                     
+                   
+                </li>
+                <li class="menu__item container-submenu">
+                    <a href="" class="menu__link submenu-btn">Formacion <i class="fas fa-angle-down"></i></a>
+                    <ul class="submenu">
+                        <li class="menu__item"><a href="" class="menu__link">Franco</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Infraestructura</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Sistemas informaticos</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Empresa</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Contacto</a>
+                </li>
+           
+            </ul>
+
+        </nav>
+
+    <!--inicio,navegador,logo,icono de bolso y 0
     <header id="container-header">
          
         <nav>
@@ -57,18 +112,19 @@
                         <li><a href="">Discos Categorias</a></li>
                         <li><a href="">Gabinetes Categorias</a></li>
                         <li><a href="">Categorias fuentes</a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href="">hola</a></li>
+                        <li><a href="">Categorias Placas de 
+                            videos<br></a></li>
+                        <li><a href="">Categorias Refigeracion</a></li>
+                        <li><a href="">Categorias Auricular</a></li>
+                        <li><a href="">Categorias Mouse</a></li>
+                        <li><a href="">Categorias Mousepad</a></li>
+                        <li><a href="">Categorias Teclados</a></li>
+                        <li><a href="">Categorias Kit de Teclados y Mouse</a></li>
+                        <li><a href="">Categorias Micro SD</a></li>
+                        <li><a href="">Categorias Pen Drive</a></li>
+                        <li><a href="">Categorias Notebook</a></li>
+                        <li><a href="">Categorias Monitores</a></li>
+                        <li><a href="">Categorias impresora</a></li>
                        
                     </ul>
                     
@@ -109,10 +165,12 @@
                         <a  href="http://pixartlatam.com/index.php/cart/"><span class="count">  0  </span></a> 
                     </div> 
                     <div class="button-mobile">
+                        
                         <button><span><i class="fas fa-bars fa-2x"></i></span></button>
                     </div>
                  </section>   
            </nav> 
+           -->
            <!--innovamos soluciones y botones productos contacto-->
            <section class="present-menu" id="blue">
                <div class="background-img"></div>
@@ -161,7 +219,7 @@
                     
                 </div>
                 <div class="tablets">
-                    <img data-aos="fade-up" data-aos-duration="2000" src="http://pixartlatam.com/wp-content/uploads/2021/01/2019-Winnovo-T10-10-inch-Android-Tablet-Android-9.0-Pie-WiFi-Tablet-picture6-1024x1024.jpg" alt="tablets">
+                    <img data-aos="fade-up" data-aos-duration="2000" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBMpiqo4hesj5AB2a97qzDZzau8vjihkRdwg&usqp=CAU" alt="tablets">
                 </div>
             </div> 
 
@@ -170,76 +228,88 @@
          
            </section>
             <section class="section-solutions"> 
-                
-                </div>
-                <div class="our-solutions">
-                    <h3>Nuestras Soluciones</h3>
-                </div>
-<----
-                <div class="Carousel">
-                 
-                    <div class="slick-list" id="slick-list">
-                        <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
-                        </button>
-                        <div class="slick-track" id="track">
-                            <div class="slick">
-                                <div>
-                                    <a href="/">
-                                       
-                                        <picture>
-                                            <img src="http://pixartlatam.com/wp-content/uploads/elementor/thumbs/ecop-1-p3ej0dl3ca96irwhgnxiyeql4uu6k4cyfktdwwrseg.png" alt="Image">
-                                        </picture>
-                                    </a>
+              
+                <div class="peliculas-recomendadas contenedor">
+                    <div class="contenedor-titulo-controles">
+                        <h3>Nuestras Soluciones</h3>
+                        <div class="indicadores"></div>
+                    </div>
+        
+                    <div class="contenedor-principal">
+                        <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+        
+                        <div class="contenedor-carousel">
+                            <div class="carousel">
+                                <div class="pelicula">
+                                    <a href="#"><img src="https://topesdegama.com/app/uploads-topesdegama.com/2020/04/Uso-tablet-1.jpg?x=480&y=375&quality=40" alt=""></a>
                                 </div>
-                            </div>
-                            <div class="slick">
-                                <div>
-                                    <a href="/">
-                                        
-                                        <picture>
-                                            <img src="http://pixartlatam.com/wp-content/uploads/elementor/thumbs/bc19-p3ej0gelwsd1hlse075enw0yx0ga77o5fyrucqnlvs.png" alt="Image">
-                                        </picture>
-                                    </a>
+                                <div class="pelicula">
+                                    <a href="#"><img src="https://topesdegama.com/app/uploads-topesdegama.com/2020/04/Uso-tablet-1.jpg?x=480&y=375&quality=40" alt=""></a>
                                 </div>
-                            </div>
-                            <div class="slick">
-                                <div>
-                                    <a href="/">
-                                        
-                                        <picture>
-                                            <img src="http://pixartlatam.com/wp-content/uploads/elementor/thumbs/Diseno-sin-titulo-46-p3ej2dynyj09cqzcq17sseh2vixg0tcadj1rv7sh3c.png" alt="Image">
-                                        </picture>
-                                    </a>
+                                <div class="pelicula">
+                                    <a href="#"><img src="https://topesdegama.com/app/uploads-topesdegama.com/2020/04/Uso-tablet-1.jpg?x=480&y=375&quality=40" alt=""></a>
                                 </div>
-                            </div>
-                            <div class="slick">
-                                <div>
-                                    <a href="/">
-                                        
-                                        <picture>
-                                            <img src="http://pixartlatam.com/wp-content/uploads/elementor/thumbs/Diseno-sin-titulo-48-p3ej4qk51m82dnkh01s80t4kc7ch9ko4p5rh24b1jc.png" alt="Image">
-                                        </picture>
-                                    </a>
+                                <div class="pelicula">
+                                    <a href="#"><img src="https://topesdegama.com/app/uploads-topesdegama.com/2020/04/Uso-tablet-1.jpg?x=480&y=375&quality=40" alt=""></a>
                                 </div>
-                            </div>
-                           
+                                <div class="pelicula">
+                                    <a href="#"><img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2021/03/setup-gaming-2267149.jpg?itok=1K4q0CVF" alt=""></a>
+                                </div>
+                                <div class="pelicula">
+                                    <a href="#"><img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2021/03/setup-gaming-2267149.jpg?itok=1K4q0CVF" alt=""></a>
+                                </div>
+                                <div class="pelicula">
+                                    <a href="#"><img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2021/03/setup-gaming-2267149.jpg?itok=1K4q0CVF" alt=""></a>
+                                </div>
+                                <div class="pelicula">
+                                    <a href="#"><img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2021/03/setup-gaming-2267149.jpg?itok=1K4q0CVF" alt=""></a>
+                                </div>
+                                <div class="pelicula">
+                                    <a href="#"><img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2021/03/setup-gaming-2267149.jpg?itok=1K4q0CVF" alt=""></a>
+                                </div>
+                                <div class="pelicula">
+                                    <a href="#"><img src="img/3.png" alt=""></a>
+                                </div>
+                                <div class="pelicula">
+                                    <a href="#"><img src="img/1.png" alt=""></a>
+                                </div>
+                                <div class="pelicula">
+                                    <a href="#"><img src="img/2.png" alt=""></a>
+                                </div>
+                                <div class="pelicula">
+                                    <a href="#"><img src="img/3.png" alt=""></a>
+                                </div>
+                                <div class="pelicula">
+                                    <a href="#"><img src="img/4.png" alt=""></a>
+                                </div>
+                                <div class="pelicula">
+                                    <a href="#"><img src="img/5.png" alt=""></a>
+                                </div>
+                                <div class="pelicula">
+                                    <a href="#"><img src="img/6.png" alt=""></a>
+                                </div>
+                                <div class="pelicula">
+                                    <a href="#"><img src="img/7.png" alt=""></a>
+                                </div>
+                                <div class="pelicula">
+                                    <a href="#"><img src="img/1.png" alt=""></a>
+                                </div>
+                                <div class="pelicula">
+                                    <a href="#"><img src="img/2.png" alt=""></a>
+                                </div>
+                                <div class="pelicula">
+                                    <a href="#"><img src="img/3.png" alt=""></a>
+                                </div>
+                                <div class="pelicula">
+                                    <a href="#"><img src="img/4.png" alt=""></a>
+                                </div>
                             </div>
                         </div>
-                        <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
-                        </button>
+        
+                        <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
                     </div>
-                    
                 </div>
-            -->
-
-                <div class="see-more">
-                    <a  class="button"href="#" role="button">ver mas</a>
-                 
-                </div>
-                 
-                
+            
                  
             </section>
             
@@ -251,44 +321,44 @@
                
             <div class="back-process"></div>
            
-            <div class="process-all">
-                <div class="our-process">
-                    <div class="tittlep">
+            
+                <div class="grupo1s">
+                    <div class="boxi">
                     <h2 data-aos="fade-right" data-aos-duration="1000">Nuestro Proceso</h2>
-                    </div>
-                    <div class="p-software">
+                   
+                  
                     <p data-aos="fade-up" data-aos-duration="2000">Opciones de Software de gestión comercial adaptadas a las necesidades 
                         <br>
                         particulares de cada compañía.</p>
                     </div>
                     </div>
-                     <div class="container-process" data-aos="fade-zoom-in"
+                     <div class="grupo3s" data-aos="fade-zoom-in"
                      data-aos-easing="ease-in-back"
                      data-aos-delay="1500"
                      data-aos-offset="0">
-                     <div class="text-llave">
-                         <div class="img-process">
-                        <img  src="" alt=""><span><i class="fas fa-wrench fa-3x"></i></span></img>
-                    </div>
+                     <div class="boxi">
+                        
+                        <a  href="/"><span><i class="fas fa-wrench fa-3x"></i></span></a>
+                    
                     <p >Servicios de estudio y optimización de 
                         requerimientos funcionales a cargo de  analistas especializados.</p>
                     </div>
-                     <div class="text-close">
-                         <div class="img-process">
-                         <img  src="" alt=""><span><i class="fas fa-hashtag fa-3x"></i></span></img>
-                        </div>
+                     <div class="boxi">
+                         
+                        <a class="ash" href="/"><span><i class="fas fa-code fa-3x"></i></span></a>
+                        
                     <p>Implementación de soluciones informáticas  innovadoras. Tanto aplicaciones  independientes como Apps que funcionen
                           como extensión de  un sitio o sistema existente.</p>
                     </div>
-                     <div class="text-globito">
-                         <div  class="img-process">
-                         <img src="" alt=""><span><i class="far fa-comments fa-3x"></i></span></img>
-                        </div>
+                     <div class="boxi">
+                         
+                    <a href="/"><span><i class="far fa-comments fa-3x"></i></span></a>
+                      
                     <p>Análisis, desarrollo y asesoría acerca de la creación
                          de aplicaciones mobile para empresas y gobiernos.</p>
                     </div>
-                 </div>
-                </div>
+                    </div>
+            
            
             
             </section>
@@ -296,60 +366,60 @@
        
             <!--imagenes y boton 3ra seccion-->
            <section class="section-3ra">
-               <div class="all-3ra">
-                    <div class="column3">
-                    <div data-aos="fade-right" data-aos-duration="1500" class="laptop">
-                   <img src="http://pixartlatam.com/wp-content/uploads/2021/01/Diseno-sin-titulo-53-759x1024.png" alt="laptops grey">
+              
+                    <div class="grupo-5imgb">
+                    <div class="boxim-3">
+                   <img data-aos="fade-right" data-aos-duration="1500" src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2021/03/setup-gaming-2267149.jpg?itok=1K4q0CVF" alt="laptops grey">
+                    
+                    
+                   <img data-aos="fade-up" data-aos-duration="2000" src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2021/03/setup-gaming-2267149.jpg?itok=1K4q0CVF" alt="monitor">
+                   
+                   
+                   <img data-aos="fade-right" data-aos-duration="1500" src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2021/03/setup-gaming-2267149.jpg?itok=1K4q0CVF" alt="router">
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="2000" class="monitor">
-                   <img src="http://pixartlatam.com/wp-content/uploads/2021/01/Diseno-sin-titulo-54-759x1024.png" alt="monitor">
-                    </div>
-                    <div data-aos="fade-right" data-aos-duration="1500" class="router">
-                   <img src="http://pixartlatam.com/wp-content/uploads/2021/01/Diseno-sin-titulo-59-759x1024.png" alt="router">
-                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="2000" class="box-bottom3">
+                        <a  class="see-all" href="botton" role="button"><span>VER TODOS</span></a>
+                     </div>
+                    <div class="boxim-2b">
+                   <img data-aos="fade-right" data-aos-duration="1500" class="tarjet" src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2021/03/setup-gaming-2267149.jpg?itok=1K4q0CVF" alt="grafic tarjet">
+                   
+                  
+                   
+                   <img data-aos="fade-right" data-aos-duration="1500" class="b450m" src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2021/03/setup-gaming-2267149.jpg?itok=1K4q0CVF" alt="B450M">
+                </div>
                 </div>
                
-                    <div class="column2b">
-                    <div data-aos="fade-right" data-aos-duration="1500" class="tarjet">
-                   <img src="http://pixartlatam.com/wp-content/uploads/2021/01/Diseno-sin-titulo-58-759x1024.png" alt="grafic tarjet">
                     </div>
-                    <div data-aos="zoom-in" data-aos-duration="1000" class="see-all">
-                   <a href="botton" role="button"><span>VER TODOS</span></a>
-                </div>
-                    <div data-aos="fade-right" data-aos-duration="1500" class="b450m">
-                   <img src="http://pixartlatam.com/wp-content/uploads/2021/01/Diseno-sin-titulo-55-759x1024.png" alt="B450M">
-                    </div>
-                    </div>
-            </div>
+           
                    
                </section>
            <!--por que escogernos-->
            <section class="section-escogernos">
                <div class="back-escogernos"></div>
-               <div class="all-escogernos">
-               <div data-aos="fade-right" data-aos-duration="2000" class="tittlehp">
-                   <div class="tittleh">
+            <div class="container-escogernos">
+               <div data-aos="fade-right" data-aos-duration="2000" class="grupo-1es">
+                   <div class="boxe">
                    <h2>por que escogernos?</h2>
-                    </div>
-                    <div class="parrafoen">
+                
+                    
                    <p>Encaramos con satisfacción y éxito nuevos proyectos, 
                        aplicando el estudio de nuevas tecnologías para dar soluciones innovadoras.</p>
                     </div>
                </div>
-               <div class="sections" data-aos="fade-zoom-in"
+               <div class="grupos4" data-aos="fade-zoom-in"
                data-aos-easing="ease-in-back"
                data-aos-delay="2000"
                data-aos-offset="0">
-               <div class="implement">
+               <div class="boxe">
                    <a href=""><span><i class="far fa-comment-dots fa-2x"></i></span></a>
                    <h3>
                        <span>Implementamos nuestros servicios a nivel nacional</span>
                    </h3>
-                   <div class="parrabox1">
+                 
                    <p>Nuestros desarrollos se encuentran implementados en instituciones gubernamentales de la nación.</p>
-                    </div>
+               
                 </div>
-               <div class="implement">
+               <div class="boxe">
                    <a href=""><span><i class="far fa-map fa-2x"></i></span></a>
                    <h3>
                        <span>Implementación de soluciones en más de 17 países</span>
@@ -358,7 +428,7 @@
                    <p>Somos la empresa con mas implementaciones efectuadas a nivel nacional e internacional.</p>
                    </div>
                 </div>
-               <div class="implement">
+               <div class="boxe">
                    <a href=""><span><i class="fas fa-wave-square fa-2x"></i></span></a>
                    <h3>
                        <span>Servicios de alta calidad en proyectos de Software y Hardware</span>
@@ -367,7 +437,7 @@
                    <p>Brindamos un trato profesional a empresas privadas y gubernamentales.</p>
                 </div>
                 </div>
-               <div class="implement">
+               <div class="boxe">
                    <a href=""><span><i class="fas fa-tablet-alt fa-2x"></i></span></a>
                    <h3>
                        <span>Implementamos soluciones basadas en Software a medida</span>
@@ -400,7 +470,7 @@
             <div class="box">
                 <figure>
                     <a href="#">
-                        <img src="http://pixartlatam.com/wp-content/uploads/2021/01/cropped-my-shop-logo-1608089688-1.png" alt="pixart">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwr_0hhJU5lOanMrLQuTq86YLNUgYsMZd7lA&usqp=CAU" alt="pixart">
                     </a>
                 </figure>
                 <h3>Pixart</h3>
@@ -427,8 +497,21 @@
         </div>
           
        </footer>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+       <script defer src="main.js"></script>
        <script>
         AOS.init();
       </script>
     </body>
     </html>
+
+
+
+
+
+
+
+
+
+
+    
